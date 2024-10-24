@@ -10,19 +10,19 @@
         Sites abertos:<br>
     </div>
     <script>
-        var sitesNames = ["Google","Orionweb","365","Github"]
-        var sites = [
+        var siteNames = ["Google","Orionweb","365","Github"];
+        var urlSites = [
             "https://accounts.google.com",
             "https://www.pr.senac.br/orionweb/site/login.asp?tipoLogin=1",
             "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638581996939692237.ZWI1ZTk5MmUtYjU4Yy00MDRlLThiZjItOWI0Y2Y3NzU2OTYzYjJiMzcxN2MtNDM4Yi00YTA3LWE4ODktNTYzNmJmMDcwZDc4&ui_locales=pt-BR&mkt=pt-BR&client-request-id=c3518348-4bc5-4357-9407-096af06c56b2&state=nsUOf55L8K6F8YbzKpvV6M5TcjL2fAy4F_spqxEBFyQP2wqazYVOPe8SzBsRkWJmTn8Tw2xM-ARpWFTk5DUa7-pvRarK91RsFH4zZ0EN0Jl7_fJxfvFWefSq2CsBe_YR91szyqTwe2_VCxUG2kdBcvac5YdRSSZuhdSJ9Vn7-sOuPVrfGQNdaFrMtFrnEmXNGryM0smJQgQtwN-T1sS4bSEwjeLOuwSLw4l-BA_qqUCblWtmHDxCXsxr4ZTpswv8KT0kgVqEbAE8bYcMsmn-lw&x-client-SKU=ID_NET8_0&x-client-ver=7.5.1.0&sso_reload=true",
             "https://github.com/login"
         ];
 
-        for (let i = 0; i < sites.length; i++) {
-            window.open(sites[i]);
+        for (let i = 0; i < urlSites.length; i++) {
+            window.open(urlSites[i]);
             document.getElementById("divSites").innerHTML += 
-                "<a href=\"" + sites[i] + "\" target=\"_blank\">"
-                + sitesNames[i]
+                "<a href=\"" + urlSites[i] + "\" target=\"_blank\">"
+                + siteNames[i]
                 + "</a>"
                 + "<br>";
         }
